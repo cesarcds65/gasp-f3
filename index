@@ -317,12 +317,12 @@
     Iniciar cadastro
   </button>
 
-  <button onclick="mostrarInfo()">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 10px;">
-      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
-    </svg>
-    O que é o VOZETA?
-  </button>
+  <button onclick="irPara('paginaInfo')">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 10px;">
+    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
+  </svg>
+  O que é o VOZETA?
+</button>
 </div>
 
 
@@ -441,6 +441,15 @@ document.getElementById('meuBotao').addEventListener(
   <button onclick="apagarCaractereComCursor()">Apagar</button>
   <button onclick="inserirEsqueletoHtml()">Código</button>
 </div>
+
+<!-- Nova página com informações sobre o VOZETA -->
+<div id="paginaInfo" class="container">
+  <h1 class="logo">O que é o VOZETA?</h1>
+  <p>O VOZETA é uma plataforma de ensino de programação acessível, projetada para ensinar HTML, CSS e JavaScript de uma forma interativa e guiada por voz.</p>
+  <p>O objetivo principal do VOZETA é proporcionar uma experiência de aprendizado inclusiva, com recursos de acessibilidade como leitura em voz alta, ajuste de contraste e tamanho de texto, além de comandos por voz para facilitar a interação.</p>
+  <button onclick="irPara('tela1')">Voltar à tela inicial</button>
+</div>
+
 
   <h3 style="margin-top: 20px; margin-bottom: 8px;">Visualização:</h3>
 
